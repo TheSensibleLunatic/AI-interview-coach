@@ -1,93 +1,69 @@
-🤖 AI Interview Coach
+# 🎤 AI Interview Coach - Campus Placement Edition
 
-A smart, private, and non-judgmental AI coach that provides instant, actionable feedback on your behavioral interview answers.
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Flask](https://img.shields.io/badge/flask-3.0-green.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-The Problem
+An AI-powered interview practice platform designed specifically for final-year engineering students preparing for campus placements in India. Get real-time feedback on your STAR method answers, filler word usage, and communication skills.
 
-Based on research with university students, the biggest blocker to interview practice isn't what to say, but the anxiety of feeling "awkward" and "self-conscious" practicing out loud. Job seekers crave a private, non-judgmental space to rehearse and want specific, actionable metrics—not vague feedback.
+![AI Interview Coach Demo](screenshot.png)
 
-This project was built to answer the question:
+## 📋 Table of Contents
 
-"How Might We use AI to give students instant, private, and actionable feedback so they can feel more confident in their verbal interview answers?"
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
-✨ Features
+## ✨ Features
 
-Record & Transcribe: Simply click "Start" to record your answer and "Stop" when you're done. Your audio is instantly transcribed using OpenAI's Whisper.
+### Current Features
 
-Actionable STAR Analysis: Get a 1-5 score and concise, non-judgmental feedback on your answer's structure based on the industry-standard STAR (Situation, Task, Action, Result) method, powered by the Gemini API.
+- **🎯 Campus Placement Scenarios**: 10+ real placement scenario questions tailored for Indian students
+- **🎙️ Voice Recording**: Record your answers directly in the browser
+- **🤖 AI-Powered Analysis**: Google Gemini analyzes your answers using STAR method framework
+- **📊 STAR Score Evaluation**: Get scored on Situation, Task, Action, and Result components
+- **🚫 Filler Word Detection**: Identifies "um", "uh", "like" and other filler words
+- **📝 Live Transcription**: OpenAI Whisper converts speech to text with high accuracy
+- **🖥️ Real-time Console**: Watch the processing pipeline in action
+- **💡 Expected Answer Examples**: See 5/5 reference answers for each question
+- **✅ Key Points Checklist**: Know exactly what to cover in your answer
+- **🎨 Beautiful UI**: Clean, modern interface with color-coded feedback
 
-Filler Word Detection: Worried about saying "um," "ah," or "like"? The app provides a detailed count of common filler words so you know exactly what to work on.
+### Placement-Specific Context
 
-Private & Instant: Your recordings are processed locally and are not stored. The feedback is for your eyes only, giving you a safe space to practice, fail, and improve without fear.
+- Questions about TCS vs product companies, internship dilemmas, GD scenarios
+- Indian college context (tier-2/3, CGPA, placement cells)
+- Real package numbers (₹3.5 LPA to ₹28 LPA)
+- Company-specific scenarios (Google, Amazon, Infosys, Accenture)
 
-🚀 The App in Action
+## 🛠️ Technologies Used
 
-Here's what the feedback report looks like after you've submitted an answer:
+### Backend
+- **Python 3.8+**: Core programming language
+- **Flask 3.0**: Web framework and API server
+- **Flask-CORS**: Cross-origin resource sharing
+- **OpenAI Whisper (Base)**: Speech-to-text transcription
+- **Google Gemini AI (2.0-flash)**: STAR method analysis and scoring
+- **JSON**: Data exchange format
 
-(You should add a screenshot here! Just drag and drop an image into this README file on GitHub.)
+### Frontend
+- **HTML5**: Markup structure
+- **CSS3**: Styling with gradients and animations
+- **Vanilla JavaScript**: Recording, API calls, and DOM manipulation
+- **MediaRecorder API**: Browser-based audio recording
+- **Fetch API**: Asynchronous HTTP requests
 
-🛠️ Tech Stack
+### AI Models
+- **Whisper Base Model**: ~74M parameters, runs locally on CPU
+- **Gemini 2.0 Flash**: Fast inference for analysis (<3s)
 
-Frontend: Plain HTML, CSS, and JavaScript
+## 📁 Project Structure
 
-Backend: Python (Flask)
-
-Speech-to-Text: OpenAI Whisper (running locally)
-
-AI Analysis: Google's Gemini API (for STAR analysis)
-
-🔧 How to Run Locally
-
-Clone the repository:
-
-git clone [https://github.com/TheSensibleLunatic/AI-interview-coach.git](https://github.com/TheSensibleLunatic/AI-interview-coach.git)
-cd AI-interview-coach
-
-
-Create and activate a Python virtual environment:
-(You named yours coach, but the standard is venv)
-
-# Windows
-python -m venv coach
-.\coach\Scripts\activate
-
-# Mac/Linux
-python3 -m venv coach
-source coach/bin/activate
-
-
-Install the required libraries:
-(Note to developer: You should run pip freeze > requirements.txt in your terminal to create this file.)
-
-pip install -r requirements.txt
-
-
-(If you don't have that file, install the libraries manually:)
-
-pip install flask flask-cors openai-whisper google-genai
-
-
-Set up your API Key:
-
-Get a free Gemini API key from Google AI Studio.
-
-In the app.py file, find the line GEMINI_API_KEY = "YOUR_API_KEY_GOES_HERE" and paste your key inside the quotes.
-
-Run the Flask Server:
-
-python app.py
-
-
-Your server will start on http://127.0.0.1:5000.
-
-Open the App:
-
-In your file explorer, find the index.html file.
-
-Right-click it and choose "Open in browser" (or use the VS Code "Live Server" extension).
-
-Start recording!
-
-👤 Author
-
-Aaradhya Verma - GitHub
