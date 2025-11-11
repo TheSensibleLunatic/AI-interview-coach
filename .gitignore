@@ -1,0 +1,9 @@
+# Virtual Environment
+coach/
+venv/
+
+# Temporary Audio
+uploads/
+
+# Python cache
+__pycache__/
