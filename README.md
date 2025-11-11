@@ -327,13 +327,6 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 text
 
-## 👤 Author
-
-**Aaradhya Verma**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
 **Built with ❤️ for final-year students preparing for campus placements**
 
 ## 🙏 Acknowledgments
